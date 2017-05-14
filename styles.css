@@ -1,0 +1,60 @@
+      .canvas{
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+      }
+
+      h2{
+          text-align: center;
+          font-family:sans-serif;
+      }
+
+      .chart rect {
+        fill: steelblue;
+      }
+
+      .chart text {
+        fill: black;
+        font: 10px sans-serif;
+        text-anchor: end;
+      }
+          
+      .axis {
+	   font: 10px sans-serif;
+	   }
+
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+          
+      .bar {
+          fill: steelblue;
+      }
+
+      .bar:hover {
+          fill: brown;
+      }   
+    
+      .zoom {
+          cursor: move;
+          fill: none;
+          pointer-events: all;
+      }
+          
+      .brush .extent {
+          stroke: #fff;
+          stroke-opacity: .6;
+          stroke-width: 2px;
+          fill-opacity: .1;
+          shape-rendering: crispEdges;
+        }
+          
+      .resize path {
+          fill: #666;
+          fill-opacity: .8;
+          stroke: #000;
+          stroke-width: 1.5px;
+        }

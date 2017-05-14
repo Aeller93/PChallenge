@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+      <script src="https://d3js.org/d3.v3.min.js"></script>
+      <script src="mainController.js"></script>
+       <script src="mainService.js"></script>
+      <link rel="stylesheet" type="text/css" href="styles.css">   
+      <title>Angular JS</title>
+   </head>
+   <body>
+      <h2>Grok Programming Challenge</h2>
+      <div ng-app = "myApp" ng-controller = "mainController">
+         <form ng-submit="search()">
+             <p style="text-align:center;font-family:sans-serif"> 
+                 <input type="text" ng-model="mainModel.url" style="width: 50%;" placeholder="please enter URL">
+             </p>
+             <div style="text-align:center">  
+                <input type="submit" value="Draw">
+            </div>
+            
+         </form>
+          <svg class="chart"></svg>
+      </div>
+       
+   </body>
+</html>
